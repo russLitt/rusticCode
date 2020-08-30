@@ -60,7 +60,7 @@
     }
 
     .bgimg-1 {
-      background-image: url("img/flannel-bg-1.jpg");
+      background-image: url("img/forrestFog.jpg");
       min-height: 100%;
     }
 
@@ -86,6 +86,10 @@
       text-decoration: none;
       text-shadow: 1px .5px 0 #444;
     }
+    
+    w3-bar.nav-item {
+        margin-top: 20px;
+    }
 
     #myNavbar {
       height: 42px;
@@ -109,11 +113,16 @@
     /* Turn off parallax scrolling for tablets and mobiles */
 
     @media only screen and (max-width: 1024px) {
-
       .bgimg-1,
       .bgimg-2,
       .bgimg-3 {
         background-attachment: scroll;
+      }
+    }
+    
+    @media only screen and (max-width: 600px) {
+      #myNavbar {
+        height: 52px;
       }
     }
   </style>
@@ -181,7 +190,7 @@
   <div class="w3-content w3-container w3-padding-64" id="portfolio">
     <h3 class="w3-center w3-xxlarge w3-titleFont">MY STUFF</h3>
     <p class="w3-center">
-      <em>Recent Projects</em>
+      <em>Check Out My Recent Projects</em>
     </p>
     <br>
 
@@ -190,7 +199,7 @@
       <div class="w3-half">
         <a href="http://myrecordcollection-wgu.herokuapp.com/" target="_blank">
           <h3 class="w3-titleFont">My Record Collection</h3>
-          <img src="img/mrc-home-7-9-2020.jpg" style="width:100%" class="w3-hover-opacity">
+          <img src="img/mrc-home-7-9-2020.JPG" style="width:100%; height: 300px;" class="w3-hover-opacity">
         </a>
         <p>This is my final capstone project to complete my degree at Western Governors University. It is built with
           Ruby on Rails and uses Bootstrap on the front end. I love collecting vinyl records, so I came up with the idea
@@ -202,10 +211,33 @@
           quickly find albums by artist, eliminating the need to scroll through the entire table.
         </p>
       </div>
+       <div class="w3-half">
+        <a href="http://flight-reviews.herokuapp.com/" target="_blank">
+          <h3 class="w3-titleFont">Flight Reviews</h3>
+          <img src="img/flight-reviews.JPG" style="width:100%; height: 300px;" class="w3-hover-opacity">
+        </a>
+        <p>Work in Progress: Coming Soon
+        </p>
+      </div>
+    </div>
+    <div class="w3-row-padding w3-left">
       <div class="w3-half">
-        <a href="img/passport865grid.pdf" target="_blank">
+        <a href="http://react-tac-toe-rusticcode.herokuapp.com/" target="_blank">
+          <h3 class="w3-titleFont">Tic-Tac-Toe</h3>
+          <img src="img/tictactoepic.JPG" style="width:100%; height: 300px;" class="w3-hover-opacity">
+        </a>
+        <p>
+          Tic tac toe is more or less the "Hello World" app of the React.js world. I followed along with the tutorial on the 
+          official React website to learn the fundamentals, but also made sure to include my own style to make it unique. I added
+          custom styling to build new featues such as highlighting the winning squares and displaying how many moves it took to 
+          win the game. I also included some cool shadow effects on the game board to give it a 3D feel and a hover effect on the 
+          current square selected. I used Bootstrap to center all the components up and to make the app responsive on mobile devices.
+        </p>
+      </div>
+      <div class="w3-half">
+        <!--<a href="" target="_blank">-->
           <h3 class="w3-titleFont">Term Planner Mobile App</h3>
-          <img src="img/storyboard.jpg" style="width:100%" class="w3-hover-opacity">
+          <img src="img/storyboard.JPG" style="width:100%; height: 300px;" class="w3-hover-opacity">
         </a>
         <p>
           I built this app for Mobile Application Development at WGU. It is an Android app written in Java. The idea is
@@ -221,7 +253,6 @@
       </div>
     </div>
   </div>
-  </div>
 
   <div class="bgimg-3 w3-display-container">
     <div class="w3-display-middle">
@@ -229,29 +260,19 @@
     </div>
   </div>
 
-  <div id="contact_form">
-    <div class="w3-content w3-container w3-padding-64">
+    <div class="w3-content w3-container">
       <h3 class="w3-center w3-xxlarge w3-titleFont">GET IN TOUCH</h3>
-
-      <div class="w3-row w3-padding-32 w3-section">
-        <div class="w3-col m4 w3-container">
-        </div>
         <div class="w3-col m12 w3-center w3-container w3-section">
           <div class="w3-large w3-margin-bottom">
             <i class="fa fa-envelope w3-hover-text-black" style="width:30px"></i>Email: russellanderson2000@gmail.com
             <br>
           </div>
-          <div class="w3-xxlarge w3-center w3-section">
+          <div class="w3-xxlarge w3-center">
             <a href="https://www.linkedin.com/in/russell-anderson-3a9b8b121" target="_blank"><i
-                class="fa fa-linkedin w3-hover-text-indigo"></i></a>&nbsp;&nbsp;&nbsp;
-          </div>
-          <div class="w3-xxlarge w3-center w3-section">
-            <a href="https://github.com/russLitt?tab=overview&from=2016-08-01&to=2016-08-31&utf8=%E2%9C%93"
-              target="_blank"><i class="fa fa-github w3-hover-text-blue-grey"></i></a>&nbsp;&nbsp;&nbsp;
+                class="fa fa-linkedin w3-hover-text-indigo"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/russLitt?tab=overview&from=2016-08-01&to=2016-08-31&utf8=%E2%9C%93"
+              target="_blank"><i class="fa fa-github w3-hover-text-blue-grey"></i></a>
           </div>
         </div>
-
-      </div>
     </div>
 
     <div w3-include-html="footer.html"></div>
