@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords"
     content="Software Engineer, Software Developer, Ruby, Ruby on Rails, Android, HTML, CSS, JavaScript, Bootstrap, w3.css, Responsive Design, Full Stack, Front End,
-                        Full-Stack Web Development, Front-End Web Development, Software Blog, Web Developer Blog, Software Developer, Web Developer, Java, SQL"
-    <meta name="description" content="Software Developer Portfolio and Blog">
+                        Full-Stack Web Development, Front-End Web Development, Software Blog, Web Developer Blog, Software Developer, Web Developer, Java, SQL">
+  <meta name="description" content="Software Developer Portfolio and Blog">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
@@ -19,113 +19,7 @@
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
     crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="favicon.png?">
-  <style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Droid Sans", 'Times New Roman', Times, serif;
-      font-size: 20px;
-    }
-
-    body,
-    html {
-      height: 100%;
-      color: #404040;
-      line-height: 1.8;
-    }
-
-    .w3-titleFont {
-      font-family: "Montserrat", 'Times New Roman', Times, serif;
-      color: black;
-    }
-
-    .w3-defFont {
-      font-family: "Playfair Display", 'Times New Roman', Times, serif;
-    }
-
-    /* Create Parallax Effect */
-
-    .bgimg-1,
-    .bgimg-2,
-    .bgimg-3 {
-      opacity: 0.89;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    .bgimg-1 {
-      background-image: url("img/forrestFog.jpg");
-      min-height: 100%;
-    }
-
-    .bgimg-2 {
-      background-image: url("img/woodDesk2.jpg");
-      min-height: 360px;
-    }
-
-    .bgimg-3 {
-      background-image: url("img/randoCode2a.jpg");
-      min-height: 360px;
-    }
-
-    .w3-wide {
-      letter-spacing: 10px;
-    }
-
-    .w3-hover-opacity {
-      cursor: pointer;
-    }
-
-    .nav-item {
-      text-decoration: none;
-      text-shadow: 1px .5px 0 #444;
-    }
-    
-    w3-bar.nav-item {
-        margin-top: 20px;
-    }
-
-    #myNavbar {
-      height: 42px;
-    }
-
-    #portfolio {
-      margin-bottom: 50px;
-    }
-
-    #about {
-      text-align: center;
-    }
-
-    #googleMap {
-      width: 100%;
-      height: 400px;
-      -webkit-filter: grayscale(75%);
-      filter: grayscale(65%);
-    }
-
-    /* Turn off parallax scrolling for tablets and mobiles */
-
-    @media only screen and (max-width: 1024px) {
-      .bgimg-1,
-      .bgimg-2,
-      .bgimg-3 {
-        background-attachment: scroll;
-      }
-    }
-    
-    @media only screen and (max-width: 600px) {
-      #myNavbar {
-        height: 52px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="site.css">
 </head>
 
 <body>
@@ -133,10 +27,11 @@
   <div w3-include-html="navbar.html"></div>
 
   <div class="bgimg-1 w3-opacity w3-display-container">
-    <div class="w3-display-middle" style="white-space:nowrap;">
-      <span class="w3-titleFont w3-col s12 w3-center w3-padding-xlarge w3-black w3-xxlarge w3-wide">rusticCode<br>
-     <span class="w3-hide-small"> russell anderson:<br> software
-        developer</span></span>
+    <div id="title-block" class="w3-display-middle">
+      <span
+        class="w3-titleFont w3-col s12 w3-center w3-padding-xlarge w3-black w3-xxlarge w3-wide w3-padding">rusticCode<br>
+        <span class="w3-hide-small"> russell anderson:<br> software
+          developer</span></span>
     </div>
   </div>
 
@@ -167,7 +62,7 @@
     <p>
       <i class="fa fa-caret-right fa-sm" aria-hidden="true"></i>&nbsp;&nbsp;what I do</p>
 
-    <div class="w3-col m12 w3-section w3-border-top">
+    <!-- <div class="w3-col m12 w3-section w3-border-top"> -->
       <!-- <p>Welcome to my little spot on the web here, I'd like to thank you for checking things out! I've been fascinated
         with
         the internet since I was a kid and am excited to be contributing some content and work of my own. rusticCode is
@@ -177,10 +72,9 @@
         colliding with the technology of today. Here, I'll be sharing my thoughts and experiences on web developemt and
         programming
         in general through my blog as often as possible and updating my portfolio periodically.</p> -->
-    </div>
+    <!-- </div> -->
   </div>
-  </div>
-
+  
   <div class="bgimg-2 w3-display-container">
     <div class="w3-display-middle">
       <span class="w3-xxxlarge w3-titleFont w3-text-light-grey w3-wide">PORTFOLIO</span>
@@ -199,7 +93,7 @@
       <div class="w3-half">
         <a href="http://myrecordcollection-wgu.herokuapp.com/" target="_blank">
           <h3 class="w3-titleFont">My Record Collection</h3>
-          <img src="img/mrc-home-7-9-2020.JPG" style="width:100%; height: 300px;" class="w3-hover-opacity">
+          <img src="img/mrc-home-7-9-2020.JPG" id="portfolio-img-size" class="w3-hover-opacity">
         </a>
         <p>This is my final capstone project to complete my degree at Western Governors University. It is built with
           Ruby on Rails and uses Bootstrap on the front end. I love collecting vinyl records, so I came up with the idea
@@ -211,10 +105,10 @@
           quickly find albums by artist, eliminating the need to scroll through the entire table.
         </p>
       </div>
-       <div class="w3-half">
+      <div class="w3-half">
         <a href="http://flight-reviews.herokuapp.com/" target="_blank">
           <h3 class="w3-titleFont">Flight Reviews</h3>
-          <img src="img/flight-reviews.JPG" style="width:100%; height: 300px;" class="w3-hover-opacity">
+          <img src="img/flight-reviews.JPG" id="portfolio-img-size" class="w3-hover-opacity">
         </a>
         <p>Work in Progress: Coming Soon
         </p>
@@ -224,20 +118,25 @@
       <div class="w3-half">
         <a href="http://react-tac-toe-rusticcode.herokuapp.com/" target="_blank">
           <h3 class="w3-titleFont">Tic-Tac-Toe</h3>
-          <img src="img/tictactoepic.JPG" style="width:100%; height: 300px;" class="w3-hover-opacity">
+          <img src="img/tictactoepic.JPG" id="portfolio-img-size" class="w3-hover-opacity">
         </a>
         <p>
-          Tic tac toe is more or less the "Hello World" app of the React.js world. I followed along with the tutorial on the 
-          official React website to learn the fundamentals, but also made sure to include my own style to make it unique. I added
-          custom styling to build new featues such as highlighting the winning squares and displaying how many moves it took to 
-          win the game. I also included some cool shadow effects on the game board to give it a 3D feel and a hover effect on the 
-          current square selected. I used Bootstrap to center all the components up and to make the app responsive on mobile devices.
+          Tic tac toe is more or less the "Hello World" app of the React.js world. I followed along with the tutorial on
+          the
+          official React website to learn the fundamentals, but also made sure to include my own style to make it
+          unique. I added
+          custom styling to build new featues such as highlighting the winning squares and displaying how many moves it
+          took to
+          win the game. I also included some cool shadow effects on the game board to give it a 3D feel and a hover
+          effect on the
+          current square selected. I used Bootstrap to center all the components up and to make the app responsive on
+          mobile devices.
         </p>
       </div>
       <div class="w3-half">
         <!--<a href="" target="_blank">-->
-          <h3 class="w3-titleFont">Term Planner Mobile App</h3>
-          <img src="img/storyboard.JPG" style="width:100%; height: 300px;" class="w3-hover-opacity">
+        <h3 class="w3-titleFont">Term Planner Mobile App</h3>
+        <img src="img/storyboard.JPG" id="portfolio-img-size" class="w3-hover-opacity">
         </a>
         <p>
           I built this app for Mobile Application Development at WGU. It is an Android app written in Java. The idea is
@@ -260,27 +159,28 @@
     </div>
   </div>
 
-    <div class="w3-content w3-container">
-      <h3 class="w3-center w3-xxlarge w3-titleFont">GET IN TOUCH</h3>
-        <div class="w3-col m12 w3-center w3-container w3-section">
-          <div class="w3-large w3-margin-bottom">
-            <i class="fa fa-envelope w3-hover-text-black" style="width:30px"></i>Email: russellanderson2000@gmail.com
-            <br>
-          </div>
-          <div class="w3-xxlarge w3-center">
-            <a href="https://www.linkedin.com/in/russell-anderson-3a9b8b121" target="_blank"><i
-                class="fa fa-linkedin w3-hover-text-indigo"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/russLitt?tab=overview&from=2016-08-01&to=2016-08-31&utf8=%E2%9C%93"
-              target="_blank"><i class="fa fa-github w3-hover-text-blue-grey"></i></a>
-          </div>
-        </div>
+  <div class="w3-content w3-container">
+    <h3 class="w3-center w3-xxlarge w3-titleFont">GET IN TOUCH</h3>
+    <div class="w3-col m12 w3-center w3-container w3-section">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-envelope w3-hover-text-black w3-padding-small"></i>Email: russellanderson2000@gmail.com
+        <br>
+      </div>
+      <div class="w3-xxlarge w3-center">
+        <a href="https://www.linkedin.com/in/russell-anderson-3a9b8b121" target="_blank">
+          <i class="fa fa-linkedin w3-hover-text-indigo"></i></a>&nbsp;&nbsp;&nbsp;<a
+          href="https://github.com/russLitt?tab=overview&from=2016-08-01&to=2016-08-31&utf8=%E2%9C%93"
+          target="_blank"><i class="fa fa-github w3-hover-text-blue-grey"></i></a>
+      </div>
     </div>
+  </div>
 
-    <div w3-include-html="footer.html"></div>
+  <div w3-include-html="footer.html"></div>
 
-    <script src="scripts.js"></script>
-    <script>
-      w3IncludeHTML();
-    </script>
+  <script src="scripts.js"></script>
+  <script>
+    w3IncludeHTML();
+  </script>
 </body>
 
 </html>
